@@ -2,3 +2,6 @@ dataset/
 *.h5
 *.hdf5
 *.model.h5
+birds.model.hdf5
+models/
+checkpoints/
