@@ -6,3 +6,4 @@ birds.model.hdf5
 models/
 checkpoints/
 birds-trained-model
+*.zip

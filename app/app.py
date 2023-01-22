@@ -49,7 +49,7 @@ def basic_view():
   
 @app.post('/predict', response_class=HTMLResponse)
 async def take_inp(file: UploadFile = File(...)):
-  loaded_model = tf.keras.models.load_model('mobile_net.h5') #load the saved model 
+  loaded_model = tf.keras.models.load_model('./mobile_net.h5') #load the saved model
   
   img = read_imagefile(await file.read())
   img = np.asarray(img.resize((224, 224)))[..., :3]
